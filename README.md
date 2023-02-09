@@ -458,7 +458,7 @@ tests:
 
 ### [expect_column_values_to_be_of_type](macros/schema_tests/column_values_basic/expect_column_values_to_be_of_type.sql)
 
-Expect a column to be of a specified data type.
+Expect a column to be of a specified data type. This uses `dtype` under the hood, not `data_type`, so it only checks the base type, not precision or size.
 
 *Applies to:* Column
 
@@ -470,7 +470,7 @@ tests:
 
 ### [expect_column_values_to_be_in_type_list](macros/schema_tests/column_values_basic/expect_column_values_to_be_in_type_list.sql)
 
-Expect a column to be one of a specified type list.
+Expect a column to be one of a specified type list. This uses `dtype` under the hood, not `data_type`, so it only checks the base type, not precision or size.
 
 *Applies to:* Column
 
